@@ -7,16 +7,22 @@ class DataIngestionArtifacts:
     test_data_file_path: str
 
 
-
+# Data Validation Artifacts
 @dataclass
 class DataValidationArtifacts:
     data_drift_file_path: str
     validation_status: bool
 
 
-
+# Data Transformation Artifacts
 @dataclass
 class DataTransformationArtifacts:
     transformed_object_file_path: str
     transformed_train_file_path: str
     transformed_test_file_path: str
+
+
+# Model Trainer Artifacts
+@dataclass
+class ModelTrainerArtifacts:
+    trained_model_file_path: str
