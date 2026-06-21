@@ -4,7 +4,7 @@ from shipment.constants import *
 from dataclasses import dataclass
 
 
-# Data Ingestion
+
 @dataclass
 class DataIngestionConfig:
     def __init__(self):
@@ -30,7 +30,7 @@ class DataIngestionConfig:
         )
 
 
-# Data Validation
+
 @dataclass
 class DataValidationConfig:
     def __init__(self):
@@ -47,7 +47,7 @@ class DataValidationConfig:
         )
 
 
-# Data Transformation
+
 @dataclass
 class DataTransformationConfig:
     def __init__(self):

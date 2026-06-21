@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
-
 # Data Ingestion Artifacts
 @dataclass
 class DataIngestionArtifacts:
@@ -8,14 +7,14 @@ class DataIngestionArtifacts:
     test_data_file_path: str
 
 
-# Data Validation Artifacts
+
 @dataclass
 class DataValidationArtifacts:
-    data_drift_report_file_path: str
+    data_drift_file_path: str
     validation_status: bool
 
 
-# Data Transformation Artifacts
+
 @dataclass
 class DataTransformationArtifacts:
     transformed_object_file_path: str

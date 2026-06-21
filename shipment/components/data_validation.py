@@ -1,19 +1,22 @@
 import json
+from shipment.logger import logging
 import sys
 import os
 import pandas as pd
-
 from pandas import DataFrame
-from typing import Tuple, Union
-from shipment.logger import logging
 from evidently.model_profile import Profile
 from evidently.model_profile.sections import DataDriftProfileSection
+from typing import Tuple, Union
 from shipment.exception import shippingException
 from shipment.entity.config_entity import DataValidationConfig
 from shipment.entity.artifacts_entity import (
     DataIngestionArtifacts,
     DataValidationArtifacts,
 )
+
+
+
+
 
 
 class DataValidation:
